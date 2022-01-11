@@ -22,7 +22,8 @@ axios
 
   axios
   .post('http://52.164.121.193:8080/api/v1/GCTSSq5w6u61dz9j2Sad/telemetry', {
-    consumption: begining
+    consumption: begining,
+    gas:Math.floor(Math.random() * 15)
   })
   .then(res => {
     console.log(`statusCode: ${res.status}`)
