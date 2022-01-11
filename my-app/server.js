@@ -2,7 +2,7 @@ const cron = require('node-cron');
 const axios = require('axios')
 
 var begining = 3;
-cron.schedule('5 * * * * *', function() {
+cron.schedule('*/5 * * * * *', function() {
   console.log('running a task every minute');
 
  begining = begining + Math.floor(Math.random() * 10);
